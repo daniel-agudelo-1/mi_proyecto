@@ -1,0 +1,30 @@
+{% include 'menu.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Autor del Proyecto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            width: 200px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Autor del Proyecto</h1>
+    <p><strong>Nombre:</strong> Daniel Agudelo</p>
+    <p><strong>Correo:</strong> agudelojuan175@gmail.com</p>
+    <p><strong>Curso:</strong> Tecnología en Análisis y Desarrollo de Software</p>
+
+    <img src="{% static 'img/foto.jpg' %}" alt="Foto del autor">
+
+    {% include 'pie.html' %}
+</body>
+</html>

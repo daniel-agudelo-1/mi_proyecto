@@ -1,0 +1,75 @@
+{% include 'menu.html' %}
+
+    <!-- Contenido Principal -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center mb-4">¿Qué es un Proyecto en Django?</h1>
+                <p class="lead">
+                    Django es un framework de desarrollo web de código abierto escrito en Python, diseñado para facilitar la creación de aplicaciones web complejas y de alto rendimiento. Un <strong>proyecto en Django</strong> es la estructura base que organiza y gestiona todos los componentes necesarios para construir una aplicación web.
+                </p>
+                <img src="https://miro.medium.com/v2/resize:fit:1200/1*slHeZngyeUr7ypEz7MNL5w.png" alt="" width="100%">
+
+                <h2 class="mt-4">Características principales de un proyecto en Django:</h2>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">
+                        <strong>Estructura Organizada</strong>: Un proyecto en Django sigue una estructura de carpetas y archivos bien definida, lo que facilita la organización del código y la escalabilidad.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>MVC (Modelo-Vista-Controlador)</strong>: Django utiliza un patrón de diseño llamado MVT (Modelo-Vista-Template), que es una variante del MVC. Esto separa la lógica de negocio (Modelos), la presentación (Templates) y el control (Vistas).
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Base de Datos Integrada</strong>: Django incluye un ORM (Mapeo Objeto-Relacional) que permite interactuar con la base de datos utilizando Python en lugar de SQL, lo que simplifica el manejo de datos.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Panel de Administración</strong>: Django proporciona un panel de administración automático y personalizable, ideal para gestionar los datos de la aplicación sin necesidad de desarrollar una interfaz desde cero.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Seguridad</strong>: Django incluye características de seguridad integradas, como protección contra ataques CSRF, SQL injection, XSS, y más.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Escalabilidad</strong>: Gracias a su diseño modular, un proyecto en Django puede crecer fácilmente, añadiendo nuevas aplicaciones o funcionalidades sin comprometer la estabilidad del sistema.
+                    </li>
+                </ul>
+
+                <h2 class="mt-4">Componentes de un Proyecto en Django:</h2>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">
+                        <strong>Settings</strong>: Configuración global del proyecto (base de datos, aplicaciones instaladas, middlewares, etc.).
+                    </li>
+                    <li class="list-group-item">
+                        <strong>URLs</strong>: Define las rutas (endpoints) de la aplicación y las asocia con las vistas correspondientes.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Views</strong>: Contiene la lógica de negocio y maneja las solicitudes HTTP para devolver respuestas.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Models</strong>: Define la estructura de la base de datos y las relaciones entre tablas.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Templates</strong>: Archivos HTML que definen la presentación de la interfaz de usuario.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Static Files</strong>: Archivos estáticos como CSS, JavaScript e imágenes.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Apps</strong>: Módulos independientes que encapsulan funcionalidades específicas (por ejemplo, una app para usuarios, otra para productos, etc.).
+                    </li>
+                </ul>
+
+                <h2 class="mt-4">¿Por qué usar Django?</h2>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item">
+                        <strong>Rápido desarrollo</strong>: Django sigue el principio "DRY" (Don't Repeat Yourself), lo que acelera el proceso de desarrollo.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Comunidad activa</strong>: Al ser un framework popular, cuenta con una gran comunidad que ofrece soporte, tutoriales y paquetes adicionales.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Versatilidad</strong>: Django es ideal para proyectos pequeños, medianos y grandes, desde blogs hasta plataformas complejas como Instagram o Pinterest.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% include 'pie.html' %}
